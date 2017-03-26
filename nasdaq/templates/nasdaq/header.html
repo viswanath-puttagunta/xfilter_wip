@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     {% load staticfiles %}
     <link rel='stylesheet' href="{% static 'css/bootstrap.min.css' %}" type='text/css' />
+    <link rel="stylesheet" type="text/css" href="https://dc-js.github.io/dc.js/css/dc.css"/>
 </head>
 
 <body class="body" style="background-color:#f6f6f6">
@@ -12,5 +13,9 @@
         {% block content %}
         {% endblock %}
     </div>
+    <script type="text/javascript" src="https://dc-js.github.io/dc.js/js/d3.js"></script>
+    <script type="text/javascript" src="https://dc-js.github.io/dc.js/js/crossfilter.js"></script>
+    <script type="text/javascript" src="https://dc-js.github.io/dc.js/js/dc.js"></script>
+    <script type="text/javascript" src="{% static 'js/DCjstest.js' %}"></script>
 </body>
 </html>

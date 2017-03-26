@@ -1,5 +1,17 @@
 {% extends "nasdaq/header.html" %}
 {% block content %}
-<p> Hey, welcome to website </p>
+<div class="container">
+    <div class="row">
+        <div id="chart1" class="dc-chart">
+            <a class="reset" href="javascript:linechart.filterAll(); dc.redrawAll();"
+                style="display: none;">reset</a>
+        </div>
+    </div>
+    <div class="row">
+        <div id="chart2" class="dc-chart">
+            Composite Chart<br>
+        </div>
+    </div>
+</div>
 {% endblock %}
 
